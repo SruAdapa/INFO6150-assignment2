@@ -6,19 +6,20 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/05f438e384.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body>
     <header>
-        <div id="header">
+        <div id="home">
             <div class="container">
                 <nav>
                     <img src="images/logo.png" class="logo">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="home-txt-div">
@@ -28,11 +29,12 @@
                         <h3>- Full Stack Developer</h3>
                     </div>
                     <div class="home-image-div">
-                        <img src="images/intro-image.jpeg" class="intro-img">
+                        <img src="images/sru-jpeg.jpeg" class="intro-img">
                     </div>
                 </div>
             </div>
         </div>
+    </header>
         <div id="about">
             <div class="container">
                 <div class="row">
@@ -49,15 +51,42 @@
                             1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
                             desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         </p>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                            and scrambled it to make a type specimen book. It has survived not only five centuries, but also 
-                            the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                            1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-                            desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        </p>
-                        <br><br>
+                        <div class="edu-table">
+                            <table>
+                                <tr>
+                                  <th>Company / Institution</th>
+                                  <th>Role / Qualification</th>
+                                  <th>Beginning</th>
+                                  <th>End</th>
+                                </tr>
+                                <tr>
+                                  <td>Northeastern University</td>
+                                  <td>Masters in Information Science</td>
+                                  <td>Sept 2023</td>
+                                  <td>May 2025</td>
+                                </tr>
+                                <tr>
+                                    <td>Hashedin By Deloitte</td>
+                                    <td>SDE-2</td>
+                                    <td>Sept 2021</td>
+                                    <td>Aug 2023</td>
+                                </tr>
+                                <tr>
+                                    <td>OFSS</td>
+                                    <td>Technical Consultant</td>
+                                    <td>June 2019</td>
+                                    <td>Sept 2021</td>
+                                </tr>
+                                <tr>
+                                    <td>NIT Raipur</td>
+                                    <td>B.Tech</td>
+                                    <td>July 2015</td>
+                                    <td>May 2019</td>
+                                </tr>
+                              </table>
+                              
+                        </div>
+                        <br>
                         <a href="images/Srujana_Adapa_resume.pdf" download="Srujana_Adapa_resume">
                             Download Resume
                         </a>
@@ -144,15 +173,42 @@
                             </div>
                          </div>
                     </div>
-                    <!-- <div class="figcaptions">
-                        <figcaption>Fig.1 - GCP Certification from Udemy</figcaption>
-                        <figcaption>Fig.2 - Spring Framework Certification</figcaption>
-                        <figcaption>Fig.3 - Hashedin Top Impactor Cerificate</figcaption>
-                        <figcaption>Fig.4 - SuperSquad Certificate by Hashedin</figcaption>
-                    </div> -->
-                    
             </div>
         </div>
-    </header>
+        <div id="contact">
+            <div class="container">
+                <div class="contact-1">
+                    <h1>Contact Me</h1>
+                    <form>
+                        <input type="text" name="Name" placeholder="Name">
+                        <input type="text" name="email" placeholder="Email-Id">
+                        <textarea name="Message"  rows="8" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+                <div class="contact-2">
+                    <p><a href="tel:+18577537075"><i class="fa-solid fa-phone"></i> +1 857-753-7075</a></p>
+                    <p><a href="mailto:bookstoreboston@yahoo.com"><i class="fa-solid fa-envelope"></i> sruadapa@gmail.com</a></p>
+                    <menu class="social-icons">
+                        <li><a href="https://www.linkedin.com/in/srujana-adapa-2802a198/"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                    </menu>
+                    <div class="audio">
+                        <audio width="200" height="200" controls>
+                            <source src="images/audio.mp3" type="audio/mp3">
+                        Your browser does not support the audio tag.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <footer class="site-footer">
+        <div class="row">
+            <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+                <a href="#">Srujana</a>.
+        </div>
+    </footer>
 </body>
 </html>
