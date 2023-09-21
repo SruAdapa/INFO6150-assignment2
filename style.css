@@ -42,7 +42,7 @@ nav ul li a::after{
     width: 0;
     height: 3px;
     transition: transform 0.4s ease-in-out;
-    background: #c09661;
+    background: #ecb46f;
     position: absolute;
     transform: scaleX(0);
 }
@@ -56,10 +56,12 @@ nav ul li a:hover::after{
     margin-left: 180px;
     margin-top: 100px;
     float: left;
+    color: #ecb46f;
 }
 
 .intro-text h1{
     font-size: 60px;
+    color: #ffffff;
 }
 
 .home-txt-div{
@@ -84,21 +86,23 @@ nav ul li a:hover::after{
 #about{
     padding-top: 6%;
 }
-.col-1{
-    margin-left: 20px;
-    flex-basis: 35%;
+.col-1 {
+    margin-left: 100px;
+    flex-basis: 30%;
 }
-.col-1 img{
-    width: 80%;
+video{
+    width: 70%;
     height: 100%;
     border-radius: 15px;
 }
 .col-2{
+    margin-left: 20px;
     flex-basis: 65%;
 }
 
 .col-2 h1{
     text-align: center;
+    color: #ecb46f;
 }
 
 .col-2 a{
@@ -127,6 +131,12 @@ nav ul li a:hover::after{
     border-color: #22223b;
     color: #22223b;
     transform: translate3d(10px);
+}
+
+.edu-title{
+    margin-bottom: 20px;
+    color: #ecb46f;
+    transition: .25s transform ease;
 }
 
 .edu-table{
@@ -159,6 +169,7 @@ tr:nth-child(odd){
 
 #services h1{
     text-align: center;
+    color: #ecb46f;
 }
 
 .services-list{
@@ -198,11 +209,12 @@ tr:nth-child(odd){
     font-size: 15px;
     margin-top: 20px;
     display: inline-block;
+    transition: 2s;
 }
 
 .services-list div:hover{
-    background: #c09661;
-    transform: translateY(-10px);
+    background: #ecb46f;
+    transform: translateY(5px)
 }
 /* --------certifications-------- */
 #portfolio{
@@ -211,6 +223,7 @@ tr:nth-child(odd){
 
 #portfolio h1{
     text-align: center;
+    color: #ecb46f;
 }
 
 
@@ -240,21 +253,10 @@ tr:nth-child(odd){
     text-align: center;
 }
 
-/* .figcaptions{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap:40px;
-    margin-top: 20px;
-}
-
-.figcaptions figcaption{
-    text-align: center;
-} */
-
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6),#c09661 );
+    background: linear-gradient(rgba(0,0,0,0.6),#ecb46f );
     border-radius: 10px;
     left:0;
     position: absolute;
@@ -284,7 +286,7 @@ tr:nth-child(odd){
 }
 
 .certificate:hover img{
-    transform: scale(1.1);
+    transform:scale(1.1);
 }
 
 .certificate:hover .layer{
@@ -297,6 +299,9 @@ tr:nth-child(odd){
 }
 .contact-1{
     flex-basis: 60%;
+}
+.contact-1 h1{
+    color: #ecb46f;
 }
 .contact-1 form{
     width: 100%;
@@ -328,6 +333,7 @@ form input, form textarea{
 
 .contact-2 p i{
     margin-right: 10px;
+    color: #ecb46f;
 }
 .contact-2 p a{
     color: #ffffff; 
@@ -426,13 +432,13 @@ nav ul li{
     transform:  rotate(180deg);
 }
 .col-1{
-    margin-left: 0px;
     -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg);
 }
-.col-1 img{
-    width: 100%;
-    height: 100%;
+video{
+    width: 80%;
+    height: 40%;
+    margin-left: 70px;
     border-radius: 15px;
     margin-top: 50px;
 }
@@ -515,6 +521,10 @@ and (min-device-width: 768px)
 and (max-device-width: 1024px) {
 
 /* ------intro--- */
+.container nav{
+    margin-top: 0px;
+}
+
 .home-image-div{
 margin-left: 140px;
 width: 100%;
@@ -536,14 +546,13 @@ width: 100%;
 
 /* ------about------- */
 .col-1{
-    margin-left: 10px;
-    margin-right: 20px;
     width: 100%;
 }
 
-.col-1 img{
-    width: 100%;
-    height: 100%;
+ video{
+    margin-left: -60px;
+    width: 120%;
+    height: 70%;
 }
 
 .col-2 a{
@@ -554,6 +563,11 @@ width: 100%;
 .edu-table{
     margin-left: 10px;
     margin-bottom: 30px;
+}
+
+/* -----services------ */
+#services{
+    margin-left: 0px;
 }
 
 #portfolio{
